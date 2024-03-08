@@ -1,36 +1,37 @@
 import re
 
 # 1. Match the word "cat" in a string.
-pattern = r""
-text = "The cat sat on the mat."
-match = re.search(pattern, text)
-print(match.group() if match else "No match")
+# pattern = r"cat"
+# text = "The cat sat on the mat."
+# match = re.search(pattern, text)
+# print(match.group() if match else "No match")
 
-'''
+
 
 # 2. Match "cat" regardless of its case.
-pattern = r""
-text = "The Cat sat on the mat."
-match = re.search(pattern, text)
-print(match.group() if match else "No match")
+# pattern = r"cat"
+# text = "The Cat sat on the mat."
+# match = re.search(pattern, text, re.IGNORECASE)
+# print(match.group() if match else "No match")
 
 # 3. Match any three-letter word ending with 'at'.
-pattern = r""
-text = "The cat sat on the mat."
-matches = re.findall(pattern, text)
-print(matches)
+# pattern = r"[a-z]at"
+# text = "The cat sat on the mat."
+# matches = re.findall(pattern, text)
+# print(matches)
 
 # 4. Match any sequence of digits.
-pattern = r""
-text = "There are 123 apples."
-matches = re.findall(pattern, text)
-print(matches)
+# pattern = r"[1-9]"
+# text = "There are 123 apples."
+# matches = re.findall(pattern, text)
+# print(matches)
 
 # 5. Match sequences not containing digits.
-pattern = r""
+pattern = r"[^1-9]"
 text = "There are 123 apples."
 matches = re.findall(pattern, text)
 print(matches)
+'''
 
 # 6. Match "cat" as a whole word.
 pattern = r""
